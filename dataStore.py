@@ -12,7 +12,7 @@ class DataStore:
 
 	def __init__(self):
 		if DataStore.__instance is not None:
-			raise Exception("singleton bruh")
+			return DataStore.__instance
 		else:
 			DataStore.__instance = self
 	def setRoll(self, r):
